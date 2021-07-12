@@ -1,5 +1,94 @@
 @import 'variables.scss';
 
-body{
-    background-color: $principal-color;
+.landing{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/cheerful-friends-sitting-cafe-talking-with-each-other.jpg");
+    background-size: 100% 100%;
+}
+
+.header-wrapper{
+    display: flex;
+    background-color: #171216;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+
+    .header-left{
+        display: flex;
+        align-items: center;
+        line-height: 1.8rem;
+        
+        h2{
+            font-family: 'Berkshire Swash', cursive;
+        }
+
+        div p{
+            color: $principal-green;
+            font-size: 1.6rem;
+            font-family: 'Berkshire Swash', cursive;
+        }
+    }
+
+    .header-nav{
+        list-style: none;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        
+        li a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .header-booking{
+        display: flex;
+        width: 14%;
+        justify-content: space-around;
+        align-items: center;
+
+        i{
+            font-size: 1.4rem;
+        }
+
+        .header-book-now{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $principal-green;
+            width: 130px;
+            height: 45px;
+        }
+    }
+}
+
+.landing-page{
+
+    .landing-leaf{
+        position: absolute;
+    }
+
+    .landing-information{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 0%;
+        left: 20%;
+
+        h1{
+            font-size: 8rem;
+            color: black;
+            font-family: 'Vast Shadow', cursive;
+            font-weight: 100;
+        }
+
+        p{
+            line-height: 100px;
+            font-size: 1.6rem;
+            color: white;
+        }
+    }
 }

@@ -1,5 +1,80 @@
-body {
-  background-color: black;
+.landing {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/cheerful-friends-sitting-cafe-talking-with-each-other.jpg");
+  background-size: 100% 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  background-color: #171216;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px 0px 100px;
+}
+.header-wrapper .header-left {
+  display: flex;
+  align-items: center;
+  line-height: 1.8rem;
+}
+.header-wrapper .header-left h2 {
+  font-family: "Berkshire Swash", cursive;
+}
+.header-wrapper .header-left div p {
+  color: #5caf49;
+  font-size: 1.6rem;
+  font-family: "Berkshire Swash", cursive;
+}
+.header-wrapper .header-nav {
+  list-style: none;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.header-wrapper .header-nav li a {
+  color: white;
+  text-decoration: none;
+}
+.header-wrapper .header-booking {
+  display: flex;
+  width: 14%;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-wrapper .header-booking i {
+  font-size: 1.4rem;
+}
+.header-wrapper .header-booking .header-book-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5caf49;
+  width: 130px;
+  height: 45px;
+}
+
+.landing-page .landing-leaf {
+  position: absolute;
+}
+.landing-page .landing-information {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0%;
+  left: 20%;
+}
+.landing-page .landing-information h1 {
+  font-size: 8rem;
+  color: black;
+  font-family: "Vast Shadow", cursive;
+  font-weight: 100;
+}
+.landing-page .landing-information p {
+  line-height: 100px;
+  font-size: 1.6rem;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
