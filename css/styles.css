@@ -57,12 +57,14 @@
 
 .landing-page .landing-leaf {
   position: absolute;
+  top: 25%;
+  left: 15%;
 }
 .landing-page .landing-information {
   display: flex;
   position: absolute;
   flex-direction: column;
-  top: 0%;
+  top: 30%;
   left: 20%;
 }
 .landing-page .landing-information h1 {
