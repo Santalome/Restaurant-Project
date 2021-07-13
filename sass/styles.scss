@@ -4,9 +4,18 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/cheerful-friends-sitting-cafe-talking-with-each-other.jpg");
+    background-image: url("../img/originalsize.jpg");
     background-size: 100% 100%;
+
+    .background-blur{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(1px);
+    }
 }
+
 
 .header-wrapper{
     display: flex;
@@ -22,13 +31,13 @@
         line-height: 1.8rem;
         
         h2{
-            font-family: 'Berkshire Swash', cursive;
+            font-family: $secondary-font;
         }
 
         div p{
             color: $principal-green;
             font-size: 1.6rem;
-            font-family: 'Berkshire Swash', cursive;
+            font-family: $secondary-font;
         }
     }
 
@@ -41,12 +50,13 @@
         li a{
             color: white;
             text-decoration: none;
+            font-size: 1.2rem;
         }
     }
 
     .header-booking{
         display: flex;
-        width: 14%;
+        width: 250px;
         justify-content: space-around;
         align-items: center;
 
@@ -70,33 +80,193 @@
     .landing-leaf{
         position: absolute;
         top: 25%;
-        left: 15%;
+        left: 12%;
     }
 
     .landing-information{
         display: flex;
         position: absolute;
         flex-direction: column;
-        top: 30%;
+        top: 33%;
         left: 20%;
 
         h1{
             font-size: 8rem;
-            color: black;
-            font-family: 'Vast Shadow', cursive;
+            color: white;
+            font-family: $title-font;
             font-weight: 100;
         }
 
         p{
-            line-height: 100px;
-            font-size: 1.6rem;
+            line-height: 140px;
+            font-size: 1.4rem;
             color: white;
+        }
+
+        .landing-order-now{
+            background-color: $principal-red;
+            width: 18%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                font-size: 1.2rem;
+                letter-spacing: 1.4px;
+            }
         }
     }
 
-    .landing-onion{
+    .landing-chilli{
         position: absolute;
-        right: 0;
-        bottom: 0;
+        right: 10%;
+        bottom: 10%;
+    }
+}
+
+.why-us{
+    width: 100%;
+    position: relative;
+
+    .flour{
+        position: absolute;
+        left: 2%;
+        top: 40%;
+    }
+
+    .circles{
+        position: absolute;
+        right: 8%;
+        top: 55%;
+    }
+
+    .whyus-container{
+        display: grid;
+        padding: 200px 350px 0px 350px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        grid-template-areas: 
+            "r l1"
+            "r l2";
+        
+        .whyus-fullcolumn{
+            grid-area: r;
+
+            h2{
+                font-family: $title-font;
+                font-weight: 200;
+                font-size: 4rem;
+                color: $principal-red;
+                margin-bottom: 40px;
+
+                span{
+                    font-family: $title-font;
+                    background: $principal-green;
+                    color: white;
+                    font-size: 2rem;
+                }
+                
+            }
+
+            h4{
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+                padding-bottom: 40px;
+            }
+            p{
+                line-height: 20px;
+            }
+        }
+
+        .whyus-great-gyro{
+            grid-area: l1;
+            margin-bottom: 40px;
+
+            img{
+                margin-bottom: 20px;
+            }
+
+            h2{
+                margin-bottom: 10px;
+                font-size: 1.5rem;
+            }
+
+            p{
+                line-height: 20px;
+            }
+        }
+
+        .whyus-chicken-gyro{
+            grid-area: l2;
+
+            img{
+                margin-bottom: 20px;
+            }
+
+            h2{
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            p{
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.hot-items{
+    position: relative;
+    background-color: $principal-red;
+    margin: 200px 350px 200px 350px;
+    padding: 50px 30px 50px 30px;
+
+    .hot-gyros{
+        
+        .dots-left{
+            position: absolute;
+            top: 10%;
+            left: 2%;
+        }
+
+        .dots-right{
+            position: absolute;
+            right: 2%;
+            bottom: 10%;
+        }
+
+        .hot-gyros-title{
+            font-family: $title-font;
+            font-size: 4.5rem;
+            font-weight: 300;
+            color: rgba(359, 78%, 49%, 0.2);
+            position: absolute;
+            top: 8%;
+            left: 25%;
+        }
+
+        .type-gyros{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .hot-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                padding-top: 30px;
+
+                h2{
+                    margin-bottom: 40px;
+                }
+            }
+
+            .hot-item1, .hot-item2, .hot-item3{
+                border-right: 1px solid white;
+                padding-right: 80px;
+            }
+        }
     }
 }
