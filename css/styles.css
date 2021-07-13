@@ -78,5 +78,10 @@
   font-size: 1.6rem;
   color: white;
 }
+.landing-page .landing-onion {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 /*# sourceMappingURL=styles.css.map */
