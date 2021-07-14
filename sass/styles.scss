@@ -216,10 +216,14 @@
     }
 }
 
+.checked {
+  color: orange;
+}
+
 .hot-items{
     position: relative;
     background-color: $principal-red;
-    margin: 200px 350px 200px 350px;
+    margin: 200px 350px 150px 350px;
     padding: 50px 30px 50px 30px;
 
     .hot-gyros{
@@ -268,5 +272,99 @@
                 padding-right: 80px;
             }
         }
+    }
+}
+
+.menu{
+    width: 100%;
+    padding: 100px 350px 100px 350px;
+    background: url("../img/menu-background.png");
+    background-color: $principal-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    .menu-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-family: $title-font;
+            font-weight: 200;
+            font-size: 2rem;
+            padding-bottom: 40px;
+        }
+
+        p{
+            text-align: center;
+            margin-bottom: 40px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .complete-menu{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 40px;
+
+        .menu-item{
+            display: flex;
+
+            .menu-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: white;
+                padding: 20px 20px 10px 30px;
+
+                .available-menu{
+                    color: $principal-green;
+                    font-size: 0.9rem;
+                }
+
+                h2{
+                    font-size: 1.2rem;
+                }
+
+                p{
+                    color: gray;
+                }
+
+                .menu-options{
+                    display: flex;
+                    align-items: center;
+
+                    .fas{
+                        border: 1px solid gray;
+                        border-radius: 50%;
+                        padding: 10px;
+                        color: gray;
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+
+            img{
+                width: 13vw;
+                height: 22vh;
+            }
+        }
+    }
+
+    button{
+        color: white;
+        background-color: $principal-red;
+        font-family: $secondary-font;
+        margin-top: 100px;
+        border-style: none;
+        height: 60px;
+        width: 200px;
+        border-radius: 40px;
+        font-size: 1.1rem;
     }
 }
