@@ -305,4 +305,56 @@
   font-size: 1.1rem;
 }
 
+.theclassic {
+  width: 100vw;
+  position: relative;
+  padding: 200px 350px 100px 350px;
+}
+.theclassic .classic {
+  display: flex;
+  justify-content: space-between;
+}
+.theclassic .classic .classic-left {
+  width: 50%;
+  padding: 30px 0px;
+}
+.theclassic .classic .classic-left h2 {
+  font-family: "Berkshire Swash", cursive;
+  color: #df1b1e;
+  line-height: 3;
+}
+.theclassic .classic .classic-left .title-classic {
+  font-family: "Vast Shadow", cursive;
+  color: black;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+.theclassic .classic .classic-left p {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-top: 30px;
+}
+.theclassic .classic .classic-left button {
+  margin-top: 40px;
+  font-family: "Berkshire Swash", cursive;
+  background-color: #5caf49;
+  border-style: none;
+  width: 25%;
+  height: 40px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 30px;
+}
+.theclassic .classic .classic-right img {
+  width: 30vw;
+  border-radius: 5px;
+}
+.theclassic .burger-decoration {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=styles.css.map */
