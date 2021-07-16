@@ -431,3 +431,154 @@
         z-index: -1;
     }
 }
+
+.vegan-banner{
+    position: relative;
+
+    img{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .banner{
+        padding: 150px 350px 100px 350px;
+        position: absolute;
+        top: 0;
+
+        h3{
+            color: $principal-green;
+            font-family: $secondary-font;
+            font-weight: 200;
+            padding-bottom: 20px;
+        }
+
+        h2{
+            font-family: $title-font;
+            font-weight: 300;
+            color: white;
+            font-size: 2.8rem;
+            line-height: 1;
+        }
+
+        p{
+            color: white;
+            padding-top: 20px;
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.testimonial-wrapper{
+    width: 100vw;
+    padding: 100px 350px 100px 350px;
+
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid $principal-gray;
+
+        .quote-img{
+            width: 2vw;
+        }
+
+        .line-img{
+            width: 12vw;
+        }
+
+        h3{
+            color: $principal-green;
+            font-family: $secondary-font;
+            font-weight: 200;
+            margin: 20px 0px;
+            font-size: 1.5rem;
+        }
+
+        h2{
+            font-family: $title-font;
+            font-weight: 200;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-p{
+            width: 30vw;
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 1.2rem;
+        }
+
+        span{
+            color: $principal-green;
+            margin: 16px 0px;
+            line-height: 0;
+        }
+
+        .testimonial-role{
+            font-size: 0.8rem;
+            color: gray;
+            margin-bottom: 50px;
+        }  
+    }
+
+    .other-plates{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+        margin-top: 100px;
+        padding-left: 150px;
+
+        
+
+        .other-plates-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            padding: 30px 200px 30px 80px;
+        }
+    }
+
+    .other-plate2{
+        display: flex;
+        padding-left: 150px;
+        margin-top: 100px;
+        width: 100%;
+        height: 20vh;
+
+        .other-plates-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 30px 30px 0px 0px;
+        }
+    }
+
+    .plates-h3{
+        font-family: $secondary-font;
+        color: red;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+
+    .plates-h2{
+        font-family: $title-font;
+        font-weight: 200;
+        font-size: 2rem;
+    }
+
+    .plates-p{
+        color: gray;
+    }
+    .test-img{
+            background-color: $principal-green;
+            width: 20vw;
+            height: 100%;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 10;
+        }
+}
