@@ -576,4 +576,108 @@
   left: 60%;
 }
 
+.footer-wrapper {
+  display: flex;
+  padding-left: 30px;
+  padding-top: 20px;
+  height: 45vh;
+  position: relative;
+}
+.footer-wrapper img {
+  position: absolute;
+}
+.footer-wrapper .ball-top {
+  right: 10%;
+  top: 20%;
+}
+.footer-wrapper .dots-top {
+  right: 12%;
+  top: 28%;
+}
+.footer-wrapper .ball-bottom {
+  right: 10%;
+  bottom: 15%;
+}
+.footer-wrapper .dots-bottom {
+  right: 6%;
+  bottom: 8%;
+}
+.footer-wrapper .img-footer-test {
+  width: 30vw;
+}
+.footer-wrapper .footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer-wrapper .footer .footer-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  padding-top: 50px;
+}
+.footer-wrapper .footer .footer-list .footer-links h3 {
+  font-family: "Berkshire Swash", cursive;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+.footer-wrapper .footer .footer-list .footer-links a, .footer-wrapper .footer .footer-list .footer-links li {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  line-height: 1.5;
+}
+.footer-wrapper .footer .footer-list .contact p {
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+}
+.footer-wrapper .footer .footer-list .contact span {
+  color: #df1b1e;
+  font-weight: 500;
+  line-height: 2.5;
+}
+.footer-wrapper .footer .footer-social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.6);
+}
+.footer-wrapper .footer .footer-social .footer-text h3 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.footer-wrapper .footer .footer-social .footer-text h3 span {
+  color: #5caf49;
+  text-decoration: underline;
+  margin-left: 3px;
+}
+.footer-wrapper .footer .footer-social .social {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 70px;
+}
+.footer-wrapper .footer .footer-social .social .social-button {
+  background-color: #2f2f2f;
+  margin-left: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.footer-wrapper .footer .footer-social .social .social-active {
+  background-color: #df1b1e;
+}
+.footer-wrapper .footer .footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+.footer-wrapper .footer .footer-copyright h3 {
+  color: rgba(0, 0, 0, 0.6);
+}
+.footer-wrapper .footer .footer-copyright h3 span {
+  color: #df1b1e;
+  margin-left: 10px;
+}
+.footer-wrapper .footer .footer-copyright p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /*# sourceMappingURL=styles.css.map */
