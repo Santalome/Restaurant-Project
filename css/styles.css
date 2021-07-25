@@ -723,6 +723,14 @@
     padding: 100px 280px 100px 280px;
   }
 
+  .subscribe-wrapper {
+    height: 35vh;
+  }
+  .subscribe-wrapper .subscribe {
+    width: 65%;
+    height: 65%;
+  }
+
   .footer-wrapper .ball-top {
     width: 5vw;
     right: 6%;
