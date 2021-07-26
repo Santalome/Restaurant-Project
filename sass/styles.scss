@@ -762,9 +762,8 @@
                     font-size: 1.3rem;
                     line-height: 1.5;
 
-                    span{
+                    .book-now{
                         color: $principal-green;
-                        text-decoration: underline;
                         margin-left: 3px;
                     }
                 }
@@ -906,5 +905,9 @@
             bottom: 0;
         }
     }
+    
+}
+
+@media (max-width: 1024px){
     
 }

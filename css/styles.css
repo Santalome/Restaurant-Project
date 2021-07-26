@@ -638,9 +638,8 @@
   font-size: 1.3rem;
   line-height: 1.5;
 }
-.footer-wrapper .footer .footer-social .footer-text h3 span {
+.footer-wrapper .footer .footer-social .footer-text h3 .book-now {
   color: #5caf49;
-  text-decoration: underline;
   margin-left: 3px;
 }
 .footer-wrapper .footer .footer-social .social {
