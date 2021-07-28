@@ -45,6 +45,9 @@
   text-decoration: none;
   font-size: 1.2rem;
 }
+.header-wrapper .close {
+  display: none;
+}
 .header-wrapper .header-booking {
   display: flex;
   width: 250px;
@@ -184,8 +187,8 @@
 .hot-items {
   position: relative;
   background-color: #df1b1e;
-  margin: 200px 350px 150px 350px;
   padding: 50px 30px 50px 30px;
+  margin: 200px 350px 150px 350px;
 }
 .hot-items .hot-gyros .dots-left {
   position: absolute;
@@ -416,6 +419,7 @@
   font-weight: 200;
   font-size: 3rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 .testimonial-wrapper .testimonial .testimonial-p {
   width: 30vw;
@@ -747,6 +751,113 @@
     width: 5vw;
     right: 5%;
     bottom: 0;
+  }
+}
+@media (max-width: 1444px) {
+  .theclassic .classic .classic-left button {
+    width: 30%;
+  }
+  .theclassic .burger-decoration {
+    width: 30vw;
+  }
+
+  .footer-wrapper .ball-top {
+    display: none;
+  }
+  .footer-wrapper .dots-top {
+    display: none;
+  }
+  .footer-wrapper .ball-bottom {
+    display: none;
+  }
+  .footer-wrapper .dots-bottom {
+    display: none;
+  }
+}
+@media (max-width: 1350px) {
+  .why-us .flour, .why-us .circles {
+    display: none;
+  }
+  .why-us .whyus-container {
+    padding: 150px 200px 0px 200px;
+  }
+
+  .hot-items {
+    margin: 200px 200px 150px 200px;
+  }
+
+  .menu {
+    padding: 200px 200px 150px 200px;
+  }
+
+  .theclassic {
+    padding: 100px 200px 100px 200px;
+  }
+
+  .vegan-banner .banner {
+    padding: 100px 200px 100px 200px;
+  }
+  .vegan-banner img {
+    height: 40vh;
+  }
+
+  .testimonial-wrapper {
+    padding: 100px 200px 100px 200px;
+  }
+
+  .subscribe-wrapper {
+    height: 30vh;
+  }
+  .subscribe-wrapper .subscribe {
+    width: 70%;
+  }
+}
+@media (max-width: 1250px) {
+  .landing .header-nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .landing .header-nav li {
+    margin-bottom: 50px;
+  }
+  .landing .header-nav li a {
+    font-size: 2.5rem;
+    font-family: "Vast Shadow", cursive;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .landing .close {
+    display: flex;
+    font-size: 3rem;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    z-index: 2;
+  }
+  .landing .header-nav li a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #5caf49;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+  }
+  .landing .header-nav li a:hover::after {
+    width: 100%;
   }
 }
 
