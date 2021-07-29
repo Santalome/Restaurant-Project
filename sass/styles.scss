@@ -1021,14 +1021,34 @@
             }
         }
 
-        .close{
-            display: flex;
+        .header-booking{
+            .fas{
+                display: none;
+            }
+
+            .header-book-now{
+                margin-right: 50px;
+            }
+        }
+        .test-close{
+            .close{
+                display: flex;
+                font-size: 3rem;
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                color: white;
+                z-index: 2;
+            }
+        }
+        
+
+        .burger{
             font-size: 3rem;
+            cursor: pointer;
             position: absolute;
-            top: 5%;
+            top: 3%;
             right: 5%;
-            color: white;
-            z-index: 2;
         }
 
         .header-nav li a::after{

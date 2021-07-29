@@ -837,7 +837,13 @@
     text-transform: uppercase;
     position: relative;
   }
-  .landing .close {
+  .landing .header-booking .fas {
+    display: none;
+  }
+  .landing .header-booking .header-book-now {
+    margin-right: 50px;
+  }
+  .landing .test-close .close {
     display: flex;
     font-size: 3rem;
     position: absolute;
@@ -845,6 +851,13 @@
     right: 5%;
     color: white;
     z-index: 2;
+  }
+  .landing .burger {
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 5%;
   }
   .landing .header-nav li a::after {
     content: "";
