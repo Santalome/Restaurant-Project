@@ -843,7 +843,7 @@
   .landing .header-booking .header-book-now {
     margin-right: 50px;
   }
-  .landing .test-close .close {
+  .landing .close {
     display: flex;
     font-size: 3rem;
     position: absolute;

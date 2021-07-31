@@ -1030,16 +1030,14 @@
                 margin-right: 50px;
             }
         }
-        .test-close{
-            .close{
-                display: flex;
-                font-size: 3rem;
-                position: absolute;
-                top: 5%;
-                right: 5%;
-                color: white;
-                z-index: 2;
-            }
+        .close{
+            display: flex;
+            font-size: 3rem;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            color: white;
+            z-index: 2;
         }
         
 
