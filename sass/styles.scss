@@ -11,7 +11,7 @@
         position: absolute;
         height: 100vh;
         width: 100vw;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(1px);
     }
 }
@@ -46,12 +46,17 @@
         width: 40%;
         display: flex;
         justify-content: space-around;
-            
+        
         li a{
             color: white;
             text-decoration: none;
             font-size: 1.2rem;
         }
+        
+    }
+
+    .burger{
+        display: none;
     }
 
     .close{
@@ -108,20 +113,17 @@
             line-height: 140px;
             font-size: 1.4rem;
             color: white;
+            margin-right: 100px;
         }
 
-        .landing-order-now{
+        .orderNow-button{
             background-color: $principal-red;
             width: 18%;
             height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            p{
-                font-size: 1.2rem;
-                letter-spacing: 1.4px;
-            }
+            border-style: none;
+            color: white;
+            font-size: 1.2rem;
+            letter-spacing: 1.4px;
         }
     }
 
@@ -228,7 +230,6 @@
 }
 
 .hot-items{
-    
     position: relative;
     background-color: $principal-red;
     padding: 50px 30px 50px 30px;
@@ -385,6 +386,7 @@
     .classic{
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .classic-left{
             width: 50%;
@@ -441,40 +443,43 @@
 }
 
 .vegan-banner{
-    position: relative;
-
+    background-image: url("../img/banner-image.jpg");
+    background-size: 100% 100%;
     img{
         width: 100vw;
         height: 50vh;
     }
 
-    .banner{
-        padding: 150px 350px 100px 350px;
-        position: absolute;
-        top: 0;
-
-        h3{
-            color: $principal-green;
-            font-family: $secondary-font;
-            font-weight: 200;
-            padding-bottom: 20px;
-        }
-
-        h2{
-            font-family: $title-font;
-            font-weight: 300;
-            color: white;
-            font-size: 2.8rem;
-            line-height: 1;
-        }
-
-        p{
-            color: white;
-            padding-top: 20px;
-            font-weight: 100;
-            letter-spacing: 2px;
+    .test{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .banner{    
+    
+            h3{
+                color: $principal-green;
+                font-family: $secondary-font;
+                font-weight: 200;
+                padding-bottom: 20px;
+            }
+    
+            h2{
+                font-family: $title-font;
+                font-weight: 300;
+                color: white;
+                font-size: 2.8rem;
+                line-height: 1;
+            }
+    
+            p{
+                color: white;
+                padding-top: 20px;
+                font-weight: 100;
+                letter-spacing: 2px;
+            }
         }
     }
+    
 }
 
 .testimonial-wrapper{
@@ -996,17 +1001,19 @@
     .landing{
         
         .header-nav{
+            position: static;
             position: absolute;
             width: 100%;
             height: 100vh;
             background: rgba($color: #000000, $alpha: 0.9);
             z-index: 2;
-            top: 0;
+            top: -100vh;
             left: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            transition: 1s;
 
             li{
                 margin-bottom: 50px;
@@ -1034,7 +1041,7 @@
             display: flex;
             font-size: 3rem;
             position: absolute;
-            top: 5%;
+            top: 2%;
             right: 5%;
             color: white;
             z-index: 2;
@@ -1042,10 +1049,11 @@
         
 
         .burger{
+            display: inline;
             font-size: 3rem;
             cursor: pointer;
             position: absolute;
-            top: 3%;
+            top: 2%;
             right: 5%;
         }
 
@@ -1064,5 +1072,180 @@
             width: 100%;
         }
         
+    }
+}
+
+@media (max-width: 1208px){
+    .landing-page{
+        
+        .landing-leaf{
+            top: 30%;
+        }
+
+        .landing-information{
+
+            top: 35%;
+            .landing-principal-text{
+                font-size: 7rem;
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .menu{
+
+        .complete-menu{
+            display: grid;
+            grid-template-columns: repeat(2, 5fr);
+            grid-gap: 50px;
+            .menu-item{
+                grid-template-columns: 1fr;
+                img{
+                    display: none;
+                }
+
+                .menu-content{
+                    .available-menu{
+                        font-size: 1.3rem;
+                    }
+
+                    .title-menu{
+                        font-size: 1.6rem;
+                    }
+
+                    .star-review{
+                        .checked{
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    p{
+                        font-size: 1.3rem;
+                    }
+
+                    .menu-options{
+                        i{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .theclassic{
+        .burger-decoration{
+            top: 33%;
+        }
+    }
+
+    .footer-wrapper{
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
+        .img-footer-test{
+            display: none;
+        }
+
+        .footer{
+            width: 100%;
+            padding: 0px 50px;
+        }
+    }
+}
+
+@media (max-width: 904px){
+
+
+    .why-us{
+
+        .whyus-container{
+            padding: 130px 100px 0px 100px;
+        }
+    }
+
+    .hot-items{
+        margin: 130px 100px 100px 100px;
+    }
+
+    .menu{
+        padding: 130px 100px 100px 100px;
+    }
+
+    .theclassic{
+        padding: 60px 100px 60px 100px;
+
+        .classic{
+            .classic-left{
+                .title-classic{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .vegan-banner{
+        
+        .banner{
+            padding: 100px;
+        }
+    }
+
+    .testimonial-wrapper{
+        padding: 130px 100px 100px 100px;
+    }
+
+    .subscribe-wrapper{
+        height: 30vh;
+        .subscribe{
+            width: 80%;
+            height: 60%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .landing{
+        .background-blur{
+            background: rgba(0, 0, 0, 0.6);
+            .header-wrapper{
+                padding: 0px 50px 0px 50px;
+            }
+
+            .landing-page{
+                img{
+                    display: none;
+                }
+                .landing-information{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 30%;
+                    left: 10%;
+                    margin: 0;
+
+                    h1{
+                        text-align: center;
+                        margin: 0;
+                    }
+                    
+                    p{
+                        text-align: center;
+                        line-height: 2.5;
+                        margin: 50px 0px;
+                    }
+
+                    button{
+                        width: 30%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
     }
 }

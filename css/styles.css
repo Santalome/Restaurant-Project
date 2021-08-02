@@ -9,7 +9,7 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(1px);
 }
 
@@ -44,6 +44,9 @@
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
+}
+.header-wrapper .burger {
+  display: none;
 }
 .header-wrapper .close {
   display: none;
@@ -88,16 +91,14 @@
   line-height: 140px;
   font-size: 1.4rem;
   color: white;
+  margin-right: 100px;
 }
-.landing-page .landing-information .landing-order-now {
+.landing-page .landing-information .orderNow-button {
   background-color: #df1b1e;
   width: 18%;
   height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.landing-page .landing-information .landing-order-now p {
+  border-style: none;
+  color: white;
   font-size: 1.2rem;
   letter-spacing: 1.4px;
 }
@@ -315,6 +316,7 @@
 .theclassic .classic {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .theclassic .classic .classic-left {
   width: 50%;
@@ -360,31 +362,32 @@
 }
 
 .vegan-banner {
-  position: relative;
+  background-image: url("../img/banner-image.jpg");
+  background-size: 100% 100%;
 }
 .vegan-banner img {
   width: 100vw;
   height: 50vh;
 }
-.vegan-banner .banner {
-  padding: 150px 350px 100px 350px;
-  position: absolute;
-  top: 0;
+.vegan-banner .test {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.vegan-banner .banner h3 {
+.vegan-banner .test .banner h3 {
   color: #5caf49;
   font-family: "Berkshire Swash", cursive;
   font-weight: 200;
   padding-bottom: 20px;
 }
-.vegan-banner .banner h2 {
+.vegan-banner .test .banner h2 {
   font-family: "Vast Shadow", cursive;
   font-weight: 300;
   color: white;
   font-size: 2.8rem;
   line-height: 1;
 }
-.vegan-banner .banner p {
+.vegan-banner .test .banner p {
   color: white;
   padding-top: 20px;
   font-weight: 100;
@@ -814,17 +817,19 @@
 }
 @media (max-width: 1250px) {
   .landing .header-nav {
+    position: static;
     position: absolute;
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.9);
     z-index: 2;
-    top: 0;
+    top: -100vh;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 1s;
   }
   .landing .header-nav li {
     margin-bottom: 50px;
@@ -847,16 +852,17 @@
     display: flex;
     font-size: 3rem;
     position: absolute;
-    top: 5%;
+    top: 2%;
     right: 5%;
     color: white;
     z-index: 2;
   }
   .landing .burger {
+    display: inline;
     font-size: 3rem;
     cursor: pointer;
     position: absolute;
-    top: 3%;
+    top: 2%;
     right: 5%;
   }
   .landing .header-nav li a::after {
@@ -871,6 +877,134 @@
   }
   .landing .header-nav li a:hover::after {
     width: 100%;
+  }
+}
+@media (max-width: 1208px) {
+  .landing-page .landing-leaf {
+    top: 30%;
+  }
+  .landing-page .landing-information {
+    top: 35%;
+  }
+  .landing-page .landing-information .landing-principal-text {
+    font-size: 7rem;
+    margin-bottom: 30px;
+  }
+  .landing-page .landing-information p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .menu .complete-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-gap: 50px;
+  }
+  .menu .complete-menu .menu-item {
+    grid-template-columns: 1fr;
+  }
+  .menu .complete-menu .menu-item img {
+    display: none;
+  }
+  .menu .complete-menu .menu-item .menu-content .available-menu {
+    font-size: 1.3rem;
+  }
+  .menu .complete-menu .menu-item .menu-content .title-menu {
+    font-size: 1.6rem;
+  }
+  .menu .complete-menu .menu-item .menu-content .star-review .checked {
+    font-size: 1.6rem;
+  }
+  .menu .complete-menu .menu-item .menu-content p {
+    font-size: 1.3rem;
+  }
+  .menu .complete-menu .menu-item .menu-content .menu-options i {
+    font-size: 1.6rem;
+  }
+
+  .theclassic .burger-decoration {
+    top: 33%;
+  }
+
+  .footer-wrapper {
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  .footer-wrapper .img-footer-test {
+    display: none;
+  }
+  .footer-wrapper .footer {
+    width: 100%;
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 904px) {
+  .why-us .whyus-container {
+    padding: 130px 100px 0px 100px;
+  }
+
+  .hot-items {
+    margin: 130px 100px 100px 100px;
+  }
+
+  .menu {
+    padding: 130px 100px 100px 100px;
+  }
+
+  .theclassic {
+    padding: 60px 100px 60px 100px;
+  }
+  .theclassic .classic .classic-left .title-classic {
+    font-size: 2rem;
+  }
+
+  .vegan-banner .banner {
+    padding: 100px;
+  }
+
+  .testimonial-wrapper {
+    padding: 130px 100px 100px 100px;
+  }
+
+  .subscribe-wrapper {
+    height: 30vh;
+  }
+  .subscribe-wrapper .subscribe {
+    width: 80%;
+    height: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .landing .background-blur {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .landing .background-blur .header-wrapper {
+    padding: 0px 50px 0px 50px;
+  }
+  .landing .background-blur .landing-page img {
+    display: none;
+  }
+  .landing .background-blur .landing-page .landing-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    left: 10%;
+    margin: 0;
+  }
+  .landing .background-blur .landing-page .landing-information h1 {
+    text-align: center;
+    margin: 0;
+  }
+  .landing .background-blur .landing-page .landing-information p {
+    text-align: center;
+    line-height: 2.5;
+    margin: 50px 0px;
+  }
+  .landing .background-blur .landing-page .landing-information button {
+    width: 30%;
+    margin: 0;
   }
 }
 
