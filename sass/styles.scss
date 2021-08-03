@@ -548,6 +548,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            word-wrap: break-word;
+            word-break: break-all;
         }
     }
 
@@ -1093,6 +1095,7 @@
             p{
                 font-size: 2rem;
                 margin-bottom: 30px;
+                line-height: 1;
             }
         }
     }
@@ -1162,6 +1165,19 @@
 @media (max-width: 904px){
 
 
+    .landing-page{
+        .landing-leaf{
+            top: 20%;
+        }
+        .landing-information{
+            top: 30%;
+
+            .orderNow-button{
+                width: 25%;
+            }
+        }
+    }
+
     .why-us{
 
         .whyus-container{
@@ -1225,8 +1241,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    top: 30%;
-                    left: 10%;
+                    top: 20%;
+                    left: 0%;
                     margin: 0;
 
                     h1{
@@ -1236,7 +1252,7 @@
                     
                     p{
                         text-align: center;
-                        line-height: 2.5;
+                        line-height: 2;
                         margin: 50px 0px;
                     }
 
@@ -1248,4 +1264,62 @@
             }
         }
     }
+
+    .why-us{
+        .whyus-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            .whyus-fullcolumn, .whyus-great-gyro, .whyus-chicken-gyro{
+                margin-bottom: 50px;
+            }
+
+            
+        }
+    }
+
+    .hot-items{
+        display: none;
+    }
+
+    .theclassic{
+        padding: 0;
+        .classic{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 70px 0px;
+
+            .classic-right{
+                display: none;
+            }
+
+            .classic-left{
+                width: 80%;
+            }
+        }
+
+        .burger-decoration{
+            display: none;
+        }
+    }
+
+    .testimonial-wrapper{
+        .testimonial{
+
+            .testimonial-p{
+                width: auto;
+            }
+        }
+
+        .other-plates, .other-plate2{
+            grid-gap: 50px;
+        }
+    }
+
+    
 }
