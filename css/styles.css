@@ -367,12 +367,16 @@
 }
 .vegan-banner img {
   width: 100vw;
-  height: 50vh;
+  height: 80vh;
 }
 .vegan-banner .test {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  height: 40vh;
+}
+.vegan-banner .test .banner {
+  padding-left: 350px;
 }
 .vegan-banner .test .banner h3 {
   color: #5caf49;

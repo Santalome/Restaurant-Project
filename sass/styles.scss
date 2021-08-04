@@ -447,15 +447,16 @@
     background-size: 100% 100%;
     img{
         width: 100vw;
-        height: 50vh;
+        height: 80vh;
     }
 
     .test{
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        height: 40vh;
         .banner{    
-    
+            padding-left: 350px;
             h3{
                 color: $principal-green;
                 font-family: $secondary-font;
