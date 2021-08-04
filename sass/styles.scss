@@ -1253,7 +1253,8 @@
                     p{
                         text-align: center;
                         line-height: 2;
-                        margin: 50px 0px;
+                        margin: 50px 30px;
+                        font-size: 1.5rem;
                     }
 
                     button{
@@ -1322,4 +1323,160 @@
     }
 
     
+}
+
+@media (max-width: 563px){
+    .landing{
+
+    
+        .background-blur{
+
+            .header-wrapper{
+                height: 10vh;
+                padding: 0px 35px 0px 50px;
+                .header-left{
+
+                    .header-leaf{
+                        display: none;
+                    }
+                }
+
+                .header-booking{
+                    .header-book-now{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .why-us{
+
+        .whyus-container{
+            padding: 60px 50px;
+        }
+    }
+
+    .menu{
+        padding: 130px 50px 100px 50px;
+        text-align: center;
+        .complete-menu{
+            grid-gap: 15px;
+            .menu-item{
+                .menu-content{
+
+                    .available-menu{
+                        font-size: 0.8rem;
+                    }
+
+                    .title-menu{
+                        font-size: 1rem;
+                    }
+
+                    .star-review{
+                        display: none;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                    }
+
+                    .menu-options{
+                        .fas{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonial-wrapper{
+        padding: 100px 50px;
+        height: auto;
+
+        .other-plates{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 1.4;
+            margin-top: 150px;
+        }
+
+        .other-plate2{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            margin-top: 420px;
+            .other-plates-left{
+                padding: 0;
+                .plates-p{
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+    .subscribe-wrapper{
+        .subscribe{
+            .form{
+                padding: 0px 20px;
+            }
+        }
+    }
+
+    .subscribe-wrapper{
+        margin-top: 0px;
+    }
+
+}
+
+@media(max-width: 491px){
+
+    .landing-page{
+        .landing-information{
+            .landing-principal-text{
+                font-size: 6rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .vegan-banner{
+        .test{
+            .banner{
+                padding: 100px 50px 100px 50px;
+            }
+        }
+    }
+
+    .footer-wrapper{
+
+        .footer{
+
+            .footer-list{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                font-size: 1.2rem;
+            }
+
+            .footer-social{
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .social{
+                    height: 100px;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 0;
+                }
+                
+            }
+        }
+    }
 }
