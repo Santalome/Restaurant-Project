@@ -455,8 +455,7 @@
         align-items: center;
         justify-content: flex-start;
         height: 40vh;
-        .banner{    
-            padding: 100px 350px 100px 280px;
+        .banner{
             h3{
                 color: $principal-green;
                 font-family: $secondary-font;
@@ -1456,6 +1455,30 @@
         }
     }
 
+    .theclassic{
+        .classic{
+            .classic-left{
+                button{
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+    .menu{
+        padding: 130px 20px 100px 20px;
+    }
+
+    .subscribe-wrapper{
+        .subscribe{
+            .form{
+                button{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
     .footer-wrapper{
 
         .footer{
@@ -1478,6 +1501,85 @@
                 }
                 
             }
+        }
+    }
+}
+
+@media (max-width: 423px){
+    .landing{
+        .background-blur{
+            .header-wrapper{
+                .header-left{
+                    width: 100%;
+                }
+                .header-booking{
+                    .header-book-now{
+                        display: none;
+                    }
+                }
+            }
+
+            .landing-page{
+                .landing-information{
+                    .landing-principal-text{
+                        font-size: 5rem;
+                    }
+
+                    p{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+        
+
+    .menu{
+        .complete-menu{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            .menu-item{
+                
+                .menu-content{
+                    width: 170px;
+                    height: 200px;
+                    padding: 0px;
+                    align-items: center;
+                    .menu-options{
+                        width: 100%;
+                        justify-content: space-evenly;
+                        .fas{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+    .testimonial-wrapper{
+        padding: 100px 10px;
+    }
+
+    .subscribe-wrapper{
+        .subscribe{
+            width: 90%;
+        }
+    }
+
+    .vegan-banner{
+        .test{
+            .banner{
+                padding: 100px 10px 100px 10px;
+            }
+        }
+    }
+
+    .footer-wrapper{
+        .footer{
+            padding: 0px 10px;
         }
     }
 }
